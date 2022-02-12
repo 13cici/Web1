@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Kino Cici</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <!-- Material Kit CSS -->
+  <link href="kino/assets/css/material-dashboard.css?v=2.1.0" rel="stylesheet" />
+</head>
+
+<body class="dark-edition">
+  <div class="wrapper ">
+    <div class="sidebar" data-color="purple" data-background-color="black" data-image="./assets/img/sidebar-2.jpg">
+      <!--
+      Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
+
+      Tip 2: you can also add an image using data-image tag
+  -->
+      <div class="logo">
+        
+      </div>
+      <div class="sidebar-wrapper">
+        <ul class="nav">
+          <li class="nav-item active  ">
+            <a class="nav-link" href="javascript:void(0)">
+              <i class="material-icons">dashboard</i>
+              <p>Kino</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="loginBtn">Login</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#" id="klijentiBtn">Klijenti</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#" id="gledateljiBtn">Gledatelji</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#" id="dvoraneBtn">Dvorane</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#" id="filmoviBtn">Filmovi</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#" id="karteBtn">Karte</a>
+        </li>
+        
+        <li class="nav-item">
+            <a class="nav-link" href="#" id="logoutBtn">Logout</a>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-panel">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
+        <div class="container-fluid">
+          <div class="navbar-wrapper">
+            <a class="navbar-brand" href="javascript:void(0)"><div id="podaci"></div></a>
+          </div>
+          
+          
+        </div>
+      </nav>
+      <!-- End Navbar -->
+      <div class="content">
+        <div class="container-fluid">
+            <div class="container" id="container">
+            </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <!--   Core JS Files   -->
+  <script src="./assets/js/core/jquery.min.js"></script>
+  <script src="./assets/js/core/popper.min.js"></script>
+  <script src="./assets/js/core/bootstrap-material-design.min.js"></script>
+  <script src="https://unpkg.com/default-passive-events"></script>
+  <script src="./assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+</body>
+
+<script src="common.js"></script>
+<script src="login.js"></script>
+<script src="klijenti.js"></script>
+<script src="gledatelji.js"></script>
+<script src="dvorane.js"></script>
+<script src="filmovi.js"></script>
+<script src="karte.js"></script>
+
+</html>
